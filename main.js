@@ -8,7 +8,7 @@ function checkGuess (){
 
     if(userGuess === randomNumber) {
 
-document.getElementById('message').innerText = 'Parabéns, você acertou!';
+document.getElementById('message').innerText = 'Parabéns, você acertou em $ {attempts} tentativas!';
     } else if (userGuess < randomNumber)
 {
 document.getElementById('message').innerText = 'Muito baixo! Tente novamente.';
