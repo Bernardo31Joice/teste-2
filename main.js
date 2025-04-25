@@ -1,12 +1,12 @@
 let randomNumber =
 Math.floor(Math.random() * 10) +1;
-let attempts = 0;
+let tentativas = 0;
 
 function checkGuess (){
     const userGuess = parseInt(document.getElementById('guess').value);
-    attempts++;
+    tentativas++;
 
-    if(userGuess === randomNumber) {document.getElementById('message').innerText = 'Parabéns, você acertou em $(attempts) tentativas!';
+    if(userGuess === randomNumber) {document.getElementById('message').innerText = 'Parabéns, você acertou em ${tentativas} tentativas!';
     } else if (userGuess < randomNumber)
 {
 document.getElementById('message').innerText = 'Muito baixo! Tente novamente.';
